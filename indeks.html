@@ -1,13 +1,426 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Starter Site</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meave Studio — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700;800;900&family=Fraunces:opsz,wght@9..144,300;9..144,700;9..144,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-<h1>Welcome</h1>
-<p>Edit this project into your own website.</p>
+  <!-- Grain overlay -->
+  <div class="grain"></div>
 
+  <div class="layout">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="sidebar-inner">
+        <div class="logo">
+          <div class="logo-icon">
+            <span class="logo-dot"></span>
+            <span class="logo-dot"></span>
+            <span class="logo-dot"></span>
+          </div>
+          <span class="logo-text">Meave Studio</span>
+        </div>
+
+        <nav class="nav">
+          <a href="#" class="nav-item active">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+            <span>Home</span>
+          </a>
+          <a href="#work" class="nav-item">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg>
+            <span>Featured Work</span>
+          </a>
+          <a href="#design" class="nav-item">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg>
+            <span>Design Picks</span>
+          </a>
+          <a href="#about" class="nav-item">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+            <span>About</span>
+          </a>
+          <a href="#contact" class="nav-item">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            <span>Contact</span>
+          </a>
+        </nav>
+
+        <div class="sidebar-divider"></div>
+
+        <div class="library-header">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="16"><path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-1 9H9V9h10v2zm-4 4H9v-2h6v2zm4-8H9V5h10v2z"/></svg>
+          <span>Creative Collection</span>
+        </div>
+
+        <div class="playlist">
+          <a href="#" class="playlist-item">
+            <div class="playlist-thumb" style="background: linear-gradient(135deg, #e96b2e, #f5a623);">Br</div>
+            <div>
+              <div class="playlist-name">Brand Identity</div>
+              <div class="playlist-meta">Playlist · 12 projects</div>
+            </div>
+          </a>
+          <a href="#" class="playlist-item">
+            <div class="playlist-thumb" style="background: linear-gradient(135deg, #1db954, #0a7a35);">Ui</div>
+            <div>
+              <div class="playlist-name">UI / UX Design</div>
+              <div class="playlist-meta">Playlist · 8 projects</div>
+            </div>
+          </a>
+          <a href="#" class="playlist-item">
+            <div class="playlist-thumb" style="background: linear-gradient(135deg, #5b21b6, #8b5cf6);">Sm</div>
+            <div>
+              <div class="playlist-name">Social Media Visuals</div>
+              <div class="playlist-meta">Playlist · 20 projects</div>
+            </div>
+          </a>
+          <a href="#" class="playlist-item">
+            <div class="playlist-thumb" style="background: linear-gradient(135deg, #0ea5e9, #0369a1);">Mo</div>
+            <div>
+              <div class="playlist-name">Motion Concepts</div>
+              <div class="playlist-meta">Playlist · 5 projects</div>
+            </div>
+          </a>
+          <a href="#" class="playlist-item">
+            <div class="playlist-thumb" style="background: linear-gradient(135deg, #f43f5e, #9f1239);">Ca</div>
+            <div>
+              <div class="playlist-name">Campaign Mockups</div>
+              <div class="playlist-meta">Playlist · 9 projects</div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="main">
+
+      <!-- HERO -->
+      <section class="hero" id="home">
+        <div class="hero-bg-orb orb1"></div>
+        <div class="hero-bg-orb orb2"></div>
+        <div class="hero-content">
+          <div class="hero-cover">
+            <span>MS</span>
+            <div class="hero-cover-play">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+            </div>
+          </div>
+          <div class="hero-text">
+            <div class="eyebrow">
+              <span class="eyebrow-dot"></span>
+              Designer Portfolio
+            </div>
+            <h1 class="hero-title">Designs that feel <em>bold</em>, cinematic, and scroll-worthy.</h1>
+            <p class="hero-desc">
+              A Spotify-inspired portfolio for showcasing multimedia, UI/UX, branding,
+              and visual storytelling in a clean dark interface.
+            </p>
+            <div class="hero-stats">
+              <div class="stat"><strong>48+</strong><span>Projects</span></div>
+              <div class="stat-div"></div>
+              <div class="stat"><strong>5 yrs</strong><span>Experience</span></div>
+              <div class="stat-div"></div>
+              <div class="stat"><strong>MY</strong><span>Based</span></div>
+            </div>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#work">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="18"><path d="M8 5v14l11-7z"/></svg>
+                View Projects
+              </a>
+              <a class="btn btn-secondary" href="#contact">Contact Me</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FEATURED WORK -->
+      <section class="section" id="work">
+        <div class="section-header">
+          <div>
+            <div class="section-label">Featured Work</div>
+            <h2>Selected Projects</h2>
+            <p>Curated like the best playlists — only the hits.</p>
+          </div>
+          <a href="#" class="see-all">See all <svg viewBox="0 0 24 24" fill="currentColor" width="14"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z"/></svg></a>
+        </div>
+
+        <div class="grid grid-4">
+          <a href="#" class="card card-animate" style="--delay: 0ms">
+            <div class="card-thumb" style="background: linear-gradient(145deg, #1a1a2e, #16213e, #0f3460);">
+              <span class="card-num">01</span>
+              <div class="card-play-btn">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3>Inside Your Mind</h3>
+              <p>Interactive awareness website built around emotional storytelling and immersive visuals.</p>
+              <div class="card-tags"><span>Web</span><span>UI/UX</span></div>
+            </div>
+          </a>
+
+          <a href="#" class="card card-animate" style="--delay: 80ms">
+            <div class="card-thumb" style="background: linear-gradient(145deg, #1c0a00, #3d1a00, #7c3700);">
+              <span class="card-num">02</span>
+              <div class="card-play-btn">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3>Personal Brand System</h3>
+              <p>Minimalist identity direction with strong typography, mood-led imagery, and social rollouts.</p>
+              <div class="card-tags"><span>Branding</span><span>Identity</span></div>
+            </div>
+          </a>
+
+          <a href="#" class="card card-animate" style="--delay: 160ms">
+            <div class="card-thumb" style="background: linear-gradient(145deg, #0a1628, #0d2137, #0a3d62);">
+              <span class="card-num">03</span>
+              <div class="card-play-btn">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3>Mobile UI Concept</h3>
+              <p>Polished high-fidelity mobile interface designed for smooth navigation and visual rhythm.</p>
+              <div class="card-tags"><span>Mobile</span><span>Figma</span></div>
+            </div>
+          </a>
+
+          <a href="#" class="card card-animate" style="--delay: 240ms">
+            <div class="card-thumb" style="background: linear-gradient(145deg, #1a0a2e, #2d1457, #4a1f8c);">
+              <span class="card-num">04</span>
+              <div class="card-play-btn">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3>Creative Campaign Set</h3>
+              <p>Promotional visuals styled for digital-first launches and lifestyle storytelling.</p>
+              <div class="card-tags"><span>Campaign</span><span>Social</span></div>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- DESIGN PICKS -->
+      <section class="section" id="design">
+        <div class="section-header">
+          <div>
+            <div class="section-label">Recently Played</div>
+            <h2>Design Aesthetics</h2>
+            <p>Moods, directions, and categories I explore.</p>
+          </div>
+        </div>
+
+        <div class="grid grid-3">
+          <div class="card card-wide card-animate" style="--delay: 0ms">
+            <div class="card-thumb card-thumb-wide" style="background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 40%, #1db954 130%);">
+              <span style="font-size:3rem;">🖥️</span>
+              <div class="card-play-btn">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3>Dark Interface Design</h3>
+              <p>Layered blacks, subtle contrast, strong hierarchy — inspired by modern music platforms.</p>
+              <div class="card-tags"><span>UI Design</span></div>
+            </div>
+          </div>
+
+          <div class="card card-wide card-animate" style="--delay: 80ms">
+            <div class="card-thumb card-thumb-wide" style="background: linear-gradient(135deg, #1c0a00 0%, #3d1a00 40%, #e96b2e 130%);">
+              <span style="font-size:3rem;">✦</span>
+              <div class="card-play-btn">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3>Brand Storytelling</h3>
+              <p>Visual systems that feel confident, memorable, and ready for client presentation.</p>
+              <div class="card-tags"><span>Branding</span></div>
+            </div>
+          </div>
+
+          <div class="card card-wide card-animate" style="--delay: 160ms">
+            <div class="card-thumb card-thumb-wide" style="background: linear-gradient(135deg, #0a0020 0%, #1a0040 40%, #8b5cf6 130%);">
+              <span style="font-size:3rem;">◈</span>
+              <div class="card-play-btn">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3>Social Visuals</h3>
+              <p>Feed concepts tailored for aesthetic brands, creators, and lifestyle-led campaigns.</p>
+              <div class="card-tags"><span>Social</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT + CONTACT -->
+      <section class="section about-section" id="about">
+        <div class="about-grid">
+
+          <div class="about-panel panel-animate">
+            <div class="about-cover">MS</div>
+            <div class="about-text">
+              <div class="section-label">About</div>
+              <h2>Meave Studio</h2>
+              <p>
+                This portfolio takes a simple starter file and transforms it into a premium
+                one-page experience. Spotify-style visual language: dark backgrounds, album-like
+                project cards, rounded panels, and a clean editorial flow — all designed to
+                feel effortless but deliberate.
+              </p>
+              <div class="skills">
+                <span>Figma</span>
+                <span>Wix</span>
+                <span>UI/UX</span>
+                <span>Branding</span>
+                <span>Creative Direction</span>
+                <span>Motion</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-panel panel-animate" id="contact">
+            <div class="section-label">Contact</div>
+            <h2>Let's Work Together</h2>
+            <p>Available for freelance projects, brand collabs, and creative direction.</p>
+
+            <div class="contact-links">
+              <a href="mailto:hello@meavestudio.com" class="contact-link">
+                <div class="contact-icon">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                </div>
+                <div>
+                  <div class="contact-label">Email</div>
+                  <div class="contact-value">hello@meavestudio.com</div>
+                </div>
+              </a>
+
+              <a href="#" class="contact-link">
+                <div class="contact-icon">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                </div>
+                <div>
+                  <div class="contact-label">Instagram</div>
+                  <div class="contact-value">@meavestudio</div>
+                </div>
+              </a>
+
+              <div class="contact-link">
+                <div class="contact-icon">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                </div>
+                <div>
+                  <div class="contact-label">Location</div>
+                  <div class="contact-value">Malaysia</div>
+                </div>
+              </div>
+            </div>
+
+            <a href="mailto:hello@meavestudio.com" class="btn btn-primary btn-full">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="18"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+              Send a Message
+            </a>
+          </div>
+
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="footer-inner">
+          <span>© 2025 Meave Studio</span>
+          <span>Portfolio inspired by Spotify's dark editorial aesthetic.</span>
+          <span>Made in Malaysia 🇲🇾</span>
+        </div>
+      </footer>
+
+    </main>
+  </div>
+
+  <!-- NOW PLAYING BAR -->
+  <div class="now-playing-bar">
+    <div class="np-left">
+      <div class="np-cover">MS</div>
+      <div class="np-info">
+        <div class="np-title">Portfolio v2025</div>
+        <div class="np-artist">Meave Studio</div>
+      </div>
+      <button class="np-heart">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="16"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+      </button>
+    </div>
+    <div class="np-center">
+      <div class="np-controls">
+        <button class="np-btn">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="16"><path d="M10.59 9.17L5.41 4 4 5.41l5.17 5.17 1.42-1.41zM14.5 4l2.04 2.04L4 18.59 5.41 20 17.96 7.46 20 9.5V4h-5.5zm.33 9.41l-1.41 1.41 3.13 3.13L14.5 20H20v-5.5l-2.04 2.04-3.13-3.13z"/></svg>
+        </button>
+        <button class="np-btn">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="20"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"/></svg>
+        </button>
+        <button class="np-btn np-play">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="22"><path d="M8 5v14l11-7z"/></svg>
+        </button>
+        <button class="np-btn">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="20"><path d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"/></svg>
+        </button>
+        <button class="np-btn">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="16"><path d="M7 7h10v3l4-4-4-4v3H5v6h2V7zm10 10H7v-3l-4 4 4 4v-3h12v-6h-2v4z"/></svg>
+        </button>
+      </div>
+      <div class="np-progress">
+        <span class="np-time">1:23</span>
+        <div class="np-bar"><div class="np-fill"></div></div>
+        <span class="np-time">4:05</span>
+      </div>
+    </div>
+    <div class="np-right">
+      <button class="np-btn">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="16"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+      </button>
+      <div class="np-volume">
+        <div class="np-bar"><div class="np-fill" style="width:70%"></div></div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Animate cards on scroll
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(el => el.target.classList.add('visible'));
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.card-animate, .panel-animate').forEach(el => observer.observe(el));
+
+    // Active nav highlight
+    const sections = document.querySelectorAll('section[id]');
+    const navItems = document.querySelectorAll('.nav-item');
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(s => {
+        if (window.scrollY >= s.offsetTop - 200) current = s.id;
+      });
+      navItems.forEach(a => {
+        a.classList.toggle('active', a.getAttribute('href') === '#' + current || (current === '' && a.getAttribute('href') === '#'));
+      });
+    });
+
+    // Now playing bar progress animation
+    let progress = 0;
+    setInterval(() => {
+      progress = (progress + 0.05) % 100;
+      document.querySelector('.np-fill').style.width = progress + '%';
+    }, 100);
+  </script>
 </body>
 </html>
