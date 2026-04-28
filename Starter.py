@@ -28,24 +28,31 @@ def add_movie():
 
 
 def view_movies():
-
-    # Debugging task: check why the program crashes when the list is empty
-    if not movies == "":
+    if not movies:
         print("No movies available")
-
-    # TODO: display all movies stored in the list
+    
     for movie in movies:
-    print("Title:", movie["title"])
-    print("Genre:", movie["genre"])
-    print("Rating:", movie["rating"])
-    print("-" * 30)
+        print("Title:", movie["title"])
+        print("Genre:", movie["genre"])
+        print("Rating:", movie["rating"])
+        print("-" * 30)
 
 
 def search_movie():
     # TODO: ask user for movie title
     # TODO: search movie in the list
     # TODO: display result
-    pass
+    search = input("Enter movie title to search: ")
+
+for movie in movies:
+    if search.lower() == movie["title"].lower():
+        print("Found!")
+        print("Title:", movie["title"])
+        print("Genre:", movie["genre"])
+        print("Rating:", movie["rating"])
+        break
+else:
+    print("Movie not found.")
 
 
 def main():
