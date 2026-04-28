@@ -1,8 +1,5 @@
 movies = []
 
-# Example movie structure:
-# {"title": "Movie Name", "genre": "Genre", "rating": "8"}
-
 def show_menu():
     print("\nMovie Collection Manager")
     print("1. Add movie")
@@ -11,8 +8,6 @@ def show_menu():
     print("4. Exit")
 
 def add_movie():
-    # TODO: ask user for title, genre and rating
-    # TODO: store the movie in the movies list
     title = input("Enter movie title: ")
     genre = input("Enter genre: ")
     rating = input("Enter rating (0-10): ")
@@ -39,20 +34,17 @@ def view_movies():
 
 
 def search_movie():
-    # TODO: ask user for movie title
-    # TODO: search movie in the list
-    # TODO: display result
     search = input("Enter movie title to search: ")
 
-for movie in movies:
-    if search.lower() == movie["title"].lower():
-        print("Found!")
-        print("Title:", movie["title"])
-        print("Genre:", movie["genre"])
-        print("Rating:", movie["rating"])
-        break
-else:
-    print("Movie not found.")
+    for movie in movies:
+        if search.lower() == movie["title"].lower():
+            print("Found!")
+            print("Title:", movie["title"])
+            print("Genre:", movie["genre"])
+            print("Rating:", movie["rating"])
+            break
+    else:
+        print("Movie not found.")
 
 
 def main():
